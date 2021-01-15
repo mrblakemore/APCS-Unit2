@@ -1,0 +1,64 @@
+
+/**
+ * Teaches about overloaded constructors
+ *
+ * @author (Mr. Blakemore)
+ * @version (Unit2)
+ */
+public class HelloClass
+{
+    private String studentName;
+    private String className;
+    private String schoolName;
+
+    /**
+     * Default Constructor
+     */
+    public HelloClass()
+    {
+        studentName = "Bob";
+        className = "Computer Science";
+        schoolName = "Carrollton High";
+    }
+    
+    /**
+     * Constructor with studentName
+     */
+    public HelloClass(String aStudentName)
+    {
+        studentName = aStudentName;
+        className = "Computer Science";
+        schoolName = "Carrollton High";
+    }
+    
+    /**
+     * Constructor with studentName, className
+     */
+    public HelloClass(String aStudentName, String aClassName)
+    {
+        studentName = aStudentName;
+        className = aClassName;
+        schoolName = "Carrollton High";
+    }
+    
+    /**
+     * Constructor with studentName, className
+     */
+    public HelloClass(String aStudentName, String aClassName, String aSchoolName)
+    {
+        studentName = aStudentName;
+        className = aClassName;
+        schoolName = aSchoolName;
+    }
+
+    /**
+     * Print the Greeting
+     */
+    public String printGreeting()
+    {
+        String sentence1 = "Hello " + schoolName + ". ";
+        String sentence2 = "My name is " + studentName + ". ";
+        String sentence3 = "This is " + className + ".";
+        return sentence1 + sentence2 + sentence3;
+    }
+}
